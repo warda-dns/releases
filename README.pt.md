@@ -29,22 +29,28 @@ O Warda bloqueia publicidade, rastreamento e sites perigosos em todos os disposi
 
 ## Transferir
 
-Última versão: **0.7.8** · [notas da versão](https://github.com/warda-dns/Releases/releases/tag/v0.7.8) · [todas as versões](https://github.com/warda-dns/Releases/releases)
+Última versão: **0.7.9** · [notas da versão](https://github.com/warda-dns/Releases/releases/tag/v0.7.9) · [todas as versões](https://github.com/warda-dns/Releases/releases)
 
 | Para instalar o Warda em | Ficheiro | O que é |
 |---|---|---|
-| **Raspberry Pi 4 ou posterior** | [`warda_0.7.8_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_raspberrypi-arm64.img.xz) | Uma imagem pronta para um cartão microSD de 16 GB ou mais, gravada com o Raspberry Pi Imager. |
-| **Debian e Ubuntu**<br>amd64 · arm64 | [`warda_0.7.8_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_amd64.deb)<br>[`warda_0.7.8_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_arm64.deb) | Um pacote Debian para uma máquina virtual ou um servidor dedicado. |
-| **Outro Linux**<br>amd64 · arm64 | [`warda_0.7.8_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_linux_amd64.tar.gz)<br>[`warda_0.7.8_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_linux_arm64.tar.gz) | Um arquivo apenas com o programa. |
-| **Docker**<br>amd64 · arm64 | Consulte a [documentação](https://docs.warda-dns.com/pt/) | Um único contentor, para um servidor ou uma NAS que já corra Docker. |
-| **Todas as instalações** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/SHA256SUMS.sig) | As somas de verificação de cada ficheiro e a respetiva assinatura. |
+| **Raspberry Pi 4 ou posterior** | [`warda_0.7.9_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_raspberrypi-arm64.img.xz) | Uma imagem pronta para um cartão microSD de 16 GB ou mais, gravada com o Raspberry Pi Imager. |
+| **Debian e Ubuntu**<br>amd64 · arm64 | [`warda_0.7.9_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_amd64.deb)<br>[`warda_0.7.9_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_arm64.deb) | Um pacote Debian para uma máquina virtual ou um servidor dedicado. |
+| **Outro Linux**<br>amd64 · arm64 | [`warda_0.7.9_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_linux_amd64.tar.gz)<br>[`warda_0.7.9_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_linux_arm64.tar.gz) | Um arquivo apenas com o programa. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.9`<br>Consulte a [documentação](https://docs.warda-dns.com/pt/) | Um único contentor, para um servidor ou uma NAS que já corra Docker. |
+| **Todas as instalações** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/SHA256SUMS.sig) | As somas de verificação de cada ficheiro e a respetiva assinatura. |
 
-Com o Raspberry Pi Imager 2, também pode abrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda.rpi-imager-manifest): o Imager configura então o Wi-Fi, o utilizador e o SSH antes de gravar o cartão.
+Com o Raspberry Pi Imager 2, também pode abrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda.rpi-imager-manifest): o Imager configura então o Wi-Fi, o utilizador e o SSH antes de gravar o cartão.
 
 Em Debian ou Ubuntu, num terminal:
 
 ```sh
-sudo apt install ./warda_0.7.8_amd64.deb
+sudo apt install ./warda_0.7.9_amd64.deb
+```
+
+Com Docker, num terminal:
+
+```sh
+docker pull ghcr.io/warda-dns/warda:0.7.9
 ```
 
 ## Verificar a sua transferência
