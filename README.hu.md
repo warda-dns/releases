@@ -29,22 +29,28 @@ A Warda letiltja a reklámokat, a követést és a veszélyes oldalakat az ottho
 
 ## Letöltés
 
-Legújabb verzió: **0.7.8** · [kiadási megjegyzések](https://github.com/warda-dns/Releases/releases/tag/v0.7.8) · [minden verzió](https://github.com/warda-dns/Releases/releases)
+Legújabb verzió: **0.7.9** · [kiadási megjegyzések](https://github.com/warda-dns/Releases/releases/tag/v0.7.9) · [minden verzió](https://github.com/warda-dns/Releases/releases)
 
 | A Warda telepítése ide | Fájl | Mi ez |
 |---|---|---|
-| **Raspberry Pi 4 vagy újabb** | [`warda_0.7.8_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_raspberrypi-arm64.img.xz) | Kész lemezkép legalább 16 GB-os microSD-kártyára, a Raspberry Pi Imager programmal felírva. |
-| **Debian és Ubuntu**<br>amd64 · arm64 | [`warda_0.7.8_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_amd64.deb)<br>[`warda_0.7.8_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_arm64.deb) | Debian-csomag virtuális gépre vagy dedikált szerverre. |
-| **Más Linux**<br>amd64 · arm64 | [`warda_0.7.8_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_linux_amd64.tar.gz)<br>[`warda_0.7.8_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda_0.7.8_linux_arm64.tar.gz) | Archívum, amely csak a programot tartalmazza. |
-| **Docker**<br>amd64 · arm64 | Lásd a [dokumentációt](https://docs.warda-dns.com/en/) | Egyetlen konténer olyan szerverre vagy NAS-ra, amelyen már fut a Docker. |
-| **Minden telepítés** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/SHA256SUMS.sig) | Az összes fájl ellenőrzőösszege és azok aláírása. |
+| **Raspberry Pi 4 vagy újabb** | [`warda_0.7.9_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_raspberrypi-arm64.img.xz) | Kész lemezkép legalább 16 GB-os microSD-kártyára, a Raspberry Pi Imager programmal felírva. |
+| **Debian és Ubuntu**<br>amd64 · arm64 | [`warda_0.7.9_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_amd64.deb)<br>[`warda_0.7.9_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_arm64.deb) | Debian-csomag virtuális gépre vagy dedikált szerverre. |
+| **Más Linux**<br>amd64 · arm64 | [`warda_0.7.9_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_linux_amd64.tar.gz)<br>[`warda_0.7.9_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_linux_arm64.tar.gz) | Archívum, amely csak a programot tartalmazza. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.9`<br>Lásd a [dokumentációt](https://docs.warda-dns.com/en/) | Egyetlen konténer olyan szerverre vagy NAS-ra, amelyen már fut a Docker. |
+| **Minden telepítés** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/SHA256SUMS.sig) | Az összes fájl ellenőrzőösszege és azok aláírása. |
 
-A Raspberry Pi Imager 2 programban megnyithatja a [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.8/warda.rpi-imager-manifest) fájlt is: az Imager ekkor a kártya írása előtt beállítja a Wi-Fi-t, a felhasználót és az SSH-t.
+A Raspberry Pi Imager 2 programban megnyithatja a [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda.rpi-imager-manifest) fájlt is: az Imager ekkor a kártya írása előtt beállítja a Wi-Fi-t, a felhasználót és az SSH-t.
 
 Debian vagy Ubuntu rendszeren, terminálban:
 
 ```sh
-sudo apt install ./warda_0.7.8_amd64.deb
+sudo apt install ./warda_0.7.9_amd64.deb
+```
+
+Dockerrel, terminálban:
+
+```sh
+docker pull ghcr.io/warda-dns/warda:0.7.9
 ```
 
 ## A letöltés ellenőrzése
