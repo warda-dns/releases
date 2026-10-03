@@ -29,28 +29,28 @@ Warda blochează reclamele, urmărirea și site-urile periculoase pe toate dispo
 
 ## Descărcare
 
-Ultima versiune: **0.7.9** · [note de versiune](https://github.com/warda-dns/Releases/releases/tag/v0.7.9) · [toate versiunile](https://github.com/warda-dns/Releases/releases)
+Ultima versiune: **0.7.10** · [note de versiune](https://github.com/warda-dns/Releases/releases/tag/v0.7.10) · [toate versiunile](https://github.com/warda-dns/Releases/releases)
 
 | Pentru a instala Warda pe | Fișier | Ce este |
 |---|---|---|
-| **Raspberry Pi 4 sau mai nou** | [`warda_0.7.9_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_raspberrypi-arm64.img.xz) | O imagine gata făcută pentru un card microSD de 16 GB sau mai mare, scrisă cu Raspberry Pi Imager. |
-| **Debian și Ubuntu**<br>amd64 · arm64 | [`warda_0.7.9_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_amd64.deb)<br>[`warda_0.7.9_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_arm64.deb) | Un pachet Debian pentru o mașină virtuală sau un server dedicat. |
-| **Alt Linux**<br>amd64 · arm64 | [`warda_0.7.9_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_linux_amd64.tar.gz)<br>[`warda_0.7.9_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda_0.7.9_linux_arm64.tar.gz) | O arhivă care conține doar programul. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.9`<br>Consultați [documentația](https://docs.warda-dns.com/en/) | Un singur container, pentru un server sau un NAS care rulează deja Docker. |
-| **Toate instalările** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/SHA256SUMS.sig) | Sumele de control ale fiecărui fișier și semnătura lor. |
+| **Raspberry Pi 4 sau mai nou** | [`warda_0.7.10_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_raspberrypi-arm64.img.xz) | O imagine gata făcută pentru un card microSD de 16 GB sau mai mare, scrisă cu Raspberry Pi Imager. |
+| **Debian și Ubuntu**<br>amd64 · arm64 | [`warda_0.7.10_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_amd64.deb)<br>[`warda_0.7.10_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_arm64.deb) | Un pachet Debian pentru o mașină virtuală sau un server dedicat. |
+| **Alt Linux**<br>amd64 · arm64 | [`warda_0.7.10_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_linux_amd64.tar.gz)<br>[`warda_0.7.10_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_linux_arm64.tar.gz) | O arhivă care conține doar programul. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.10`<br>Consultați [documentația](https://docs.warda-dns.com/en/) | Un singur container, pentru un server sau un NAS care rulează deja Docker. |
+| **Toate instalările** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/SHA256SUMS.sig) | Sumele de control ale fiecărui fișier și semnătura lor. |
 
-Cu Raspberry Pi Imager 2 puteți deschide și [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.9/warda.rpi-imager-manifest): Imager configurează atunci Wi-Fi-ul, utilizatorul și SSH înainte de a scrie cardul.
+Cu Raspberry Pi Imager 2 puteți deschide și [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda.rpi-imager-manifest): Imager configurează atunci Wi-Fi-ul, utilizatorul și SSH înainte de a scrie cardul.
 
 Pe Debian sau Ubuntu, într-un terminal:
 
 ```sh
-sudo apt install ./warda_0.7.9_amd64.deb
+sudo apt install ./warda_0.7.10_amd64.deb
 ```
 
 Cu Docker, într-un terminal:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.9
+docker pull ghcr.io/warda-dns/warda:0.7.10
 ```
 
 ## Verificați descărcarea
