@@ -29,28 +29,28 @@ Warda blocks advertising, tracking and dangerous sites for every device of your 
 
 ## Download
 
-Latest version: **0.7.10** · [release notes](https://github.com/warda-dns/Releases/releases/tag/v0.7.10) · [all versions](https://github.com/warda-dns/Releases/releases)
+Latest version: **0.7.11** · [release notes](https://github.com/warda-dns/Releases/releases/tag/v0.7.11) · [all versions](https://github.com/warda-dns/Releases/releases)
 
 | To install Warda on | File | What it is |
 |---|---|---|
-| **Raspberry Pi 4 or later** | [`warda_0.7.10_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_raspberrypi-arm64.img.xz) | A ready image for a microSD card of 16 GB or more, written with Raspberry Pi Imager. |
-| **Debian and Ubuntu**<br>amd64 · arm64 | [`warda_0.7.10_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_amd64.deb)<br>[`warda_0.7.10_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_arm64.deb) | A Debian package for a virtual machine or a dedicated server. |
-| **Another Linux**<br>amd64 · arm64 | [`warda_0.7.10_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_linux_amd64.tar.gz)<br>[`warda_0.7.10_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_linux_arm64.tar.gz) | An archive with the program alone. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.10`<br>See the [documentation](https://docs.warda-dns.com/en/) | One container, for a server or a NAS that already runs Docker. |
-| **Every installation** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/SHA256SUMS.sig) | The checksums of every file, and their signature. |
+| **Raspberry Pi 4 or later** | [`warda_0.7.11_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_raspberrypi-arm64.img.xz) | A ready image for a microSD card of 16 GB or more, written with Raspberry Pi Imager. |
+| **Debian and Ubuntu**<br>amd64 · arm64 | [`warda_0.7.11_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_amd64.deb)<br>[`warda_0.7.11_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_arm64.deb) | A Debian package for a virtual machine or a dedicated server. |
+| **Another Linux**<br>amd64 · arm64 | [`warda_0.7.11_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_amd64.tar.gz)<br>[`warda_0.7.11_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_arm64.tar.gz) | An archive with the program alone. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.11`<br>See the [documentation](https://docs.warda-dns.com/en/) | One container, for a server or a NAS that already runs Docker. |
+| **Every installation** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS.sig) | The checksums of every file, and their signature. |
 
-With Raspberry Pi Imager 2, you can also open [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda.rpi-imager-manifest): Imager then sets the Wi-Fi, the user and SSH before writing the card.
+With Raspberry Pi Imager 2, you can also open [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda.rpi-imager-manifest): Imager then sets the Wi-Fi, the user and SSH before writing the card.
 
 On Debian or Ubuntu, in a terminal:
 
 ```sh
-sudo apt install ./warda_0.7.10_amd64.deb
+sudo apt install ./warda_0.7.11_amd64.deb
 ```
 
 With Docker, in a terminal:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.10
+docker pull ghcr.io/warda-dns/warda:0.7.11
 ```
 
 ## Verify your download
