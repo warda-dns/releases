@@ -29,28 +29,28 @@ Warda blokuje reklamy, śledzenie i niebezpieczne strony na wszystkich urządzen
 
 ## Pobierz
 
-Najnowsza wersja: **0.7.10** · [informacje o wydaniu](https://github.com/warda-dns/Releases/releases/tag/v0.7.10) · [wszystkie wersje](https://github.com/warda-dns/Releases/releases)
+Najnowsza wersja: **0.7.11** · [informacje o wydaniu](https://github.com/warda-dns/Releases/releases/tag/v0.7.11) · [wszystkie wersje](https://github.com/warda-dns/Releases/releases)
 
 | Aby zainstalować Wardę na | Plik | Co to jest |
 |---|---|---|
-| **Raspberry Pi 4 lub nowszy** | [`warda_0.7.10_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_raspberrypi-arm64.img.xz) | Gotowy obraz na kartę microSD o pojemności co najmniej 16 GB, zapisywany za pomocą Raspberry Pi Imager. |
-| **Debian i Ubuntu**<br>amd64 · arm64 | [`warda_0.7.10_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_amd64.deb)<br>[`warda_0.7.10_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_arm64.deb) | Pakiet Debiana dla maszyny wirtualnej lub serwera dedykowanego. |
-| **Inny Linux**<br>amd64 · arm64 | [`warda_0.7.10_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_linux_amd64.tar.gz)<br>[`warda_0.7.10_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda_0.7.10_linux_arm64.tar.gz) | Archiwum z samym programem. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.10`<br>Zobacz [dokumentację](https://docs.warda-dns.com/en/) | Jeden kontener dla serwera lub NAS-a, na którym już działa Docker. |
-| **Wszystkie instalacje** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/SHA256SUMS.sig) | Sumy kontrolne wszystkich plików i ich podpis. |
+| **Raspberry Pi 4 lub nowszy** | [`warda_0.7.11_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_raspberrypi-arm64.img.xz) | Gotowy obraz na kartę microSD o pojemności co najmniej 16 GB, zapisywany za pomocą Raspberry Pi Imager. |
+| **Debian i Ubuntu**<br>amd64 · arm64 | [`warda_0.7.11_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_amd64.deb)<br>[`warda_0.7.11_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_arm64.deb) | Pakiet Debiana dla maszyny wirtualnej lub serwera dedykowanego. |
+| **Inny Linux**<br>amd64 · arm64 | [`warda_0.7.11_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_amd64.tar.gz)<br>[`warda_0.7.11_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_arm64.tar.gz) | Archiwum z samym programem. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.11`<br>Zobacz [dokumentację](https://docs.warda-dns.com/en/) | Jeden kontener dla serwera lub NAS-a, na którym już działa Docker. |
+| **Wszystkie instalacje** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS.sig) | Sumy kontrolne wszystkich plików i ich podpis. |
 
-W programie Raspberry Pi Imager 2 możesz też otworzyć plik [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.10/warda.rpi-imager-manifest): Imager ustawi wtedy Wi-Fi, użytkownika i SSH przed zapisaniem karty.
+W programie Raspberry Pi Imager 2 możesz też otworzyć plik [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda.rpi-imager-manifest): Imager ustawi wtedy Wi-Fi, użytkownika i SSH przed zapisaniem karty.
 
 W Debianie lub Ubuntu, w terminalu:
 
 ```sh
-sudo apt install ./warda_0.7.10_amd64.deb
+sudo apt install ./warda_0.7.11_amd64.deb
 ```
 
 Z Dockerem, w terminalu:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.10
+docker pull ghcr.io/warda-dns/warda:0.7.11
 ```
 
 ## Sprawdź pobrany plik
