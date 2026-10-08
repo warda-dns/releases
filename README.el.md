@@ -29,28 +29,28 @@
 
 ## Λήψη
 
-Τελευταία έκδοση: **0.7.11** · [σημειώσεις έκδοσης](https://github.com/warda-dns/Releases/releases/tag/v0.7.11) · [όλες οι εκδόσεις](https://github.com/warda-dns/Releases/releases)
+Τελευταία έκδοση: **0.7.13** · [σημειώσεις έκδοσης](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [όλες οι εκδόσεις](https://github.com/warda-dns/Releases/releases)
 
 | Για εγκατάσταση του Warda σε | Αρχείο | Τι είναι |
 |---|---|---|
-| **Raspberry Pi 4 ή νεότερο** | [`warda_0.7.11_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_raspberrypi-arm64.img.xz) | Έτοιμη εικόνα για κάρτα microSD 16 GB ή μεγαλύτερη, που γράφεται με το Raspberry Pi Imager. |
-| **Debian και Ubuntu**<br>amd64 · arm64 | [`warda_0.7.11_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_amd64.deb)<br>[`warda_0.7.11_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_arm64.deb) | Ένα πακέτο Debian για εικονική μηχανή ή αποκλειστικό διακομιστή. |
-| **Άλλο Linux**<br>amd64 · arm64 | [`warda_0.7.11_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_amd64.tar.gz)<br>[`warda_0.7.11_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_arm64.tar.gz) | Ένα συμπιεσμένο αρχείο μόνο με το πρόγραμμα. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.11`<br>Δείτε την [τεκμηρίωση](https://docs.warda-dns.com/en/) | Ένα container, για διακομιστή ή NAS που ήδη τρέχει Docker. |
-| **Όλες οι εγκαταστάσεις** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS.sig) | Τα checksums κάθε αρχείου και η υπογραφή τους. |
+| **Raspberry Pi 4 ή νεότερο** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Έτοιμη εικόνα για κάρτα microSD 16 GB ή μεγαλύτερη, που γράφεται με το Raspberry Pi Imager. |
+| **Debian και Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Ένα πακέτο Debian για εικονική μηχανή ή αποκλειστικό διακομιστή. |
+| **Άλλο Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Ένα συμπιεσμένο αρχείο μόνο με το πρόγραμμα. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Δείτε την [τεκμηρίωση](https://docs.warda-dns.com/en/) | Ένα container, για διακομιστή ή NAS που ήδη τρέχει Docker. |
+| **Όλες οι εγκαταστάσεις** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Τα checksums κάθε αρχείου και η υπογραφή τους. |
 
-Με το Raspberry Pi Imager 2 μπορείτε επίσης να ανοίξετε το [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda.rpi-imager-manifest): το Imager ρυθμίζει τότε το Wi-Fi, τον χρήστη και το SSH πριν γράψει την κάρτα.
+Με το Raspberry Pi Imager 2 μπορείτε επίσης να ανοίξετε το [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest): το Imager ρυθμίζει τότε το Wi-Fi, τον χρήστη και το SSH πριν γράψει την κάρτα.
 
 Σε Debian ή Ubuntu, σε ένα τερματικό:
 
 ```sh
-sudo apt install ./warda_0.7.11_amd64.deb
+sudo apt install ./warda_0.7.13_amd64.deb
 ```
 
 Με Docker, σε ένα τερματικό:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.11
+docker pull ghcr.io/warda-dns/warda:0.7.13
 ```
 
 ## Επαληθεύστε τη λήψη σας
