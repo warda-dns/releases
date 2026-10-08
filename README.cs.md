@@ -29,28 +29,28 @@ Warda blokuje reklamu, sledování a nebezpečné weby pro všechna zařízení 
 
 ## Stáhnout
 
-Nejnovější verze: **0.7.11** · [poznámky k vydání](https://github.com/warda-dns/Releases/releases/tag/v0.7.11) · [všechny verze](https://github.com/warda-dns/Releases/releases)
+Nejnovější verze: **0.7.13** · [poznámky k vydání](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [všechny verze](https://github.com/warda-dns/Releases/releases)
 
 | Instalace Wardy na | Soubor | Co to je |
 |---|---|---|
-| **Raspberry Pi 4 nebo novější** | [`warda_0.7.11_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_raspberrypi-arm64.img.xz) | Hotový obraz pro kartu microSD s kapacitou 16 GB nebo více, zapsaný pomocí Raspberry Pi Imager. |
-| **Debian a Ubuntu**<br>amd64 · arm64 | [`warda_0.7.11_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_amd64.deb)<br>[`warda_0.7.11_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_arm64.deb) | Balíček pro Debian pro virtuální stroj nebo dedikovaný server. |
-| **Jiný Linux**<br>amd64 · arm64 | [`warda_0.7.11_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_amd64.tar.gz)<br>[`warda_0.7.11_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_arm64.tar.gz) | Archiv se samotným programem. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.11`<br>Viz [dokumentace](https://docs.warda-dns.com/en/) | Jeden kontejner pro server nebo NAS, na kterém už Docker běží. |
-| **Všechny instalace** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS.sig) | Kontrolní součty všech souborů a jejich podpis. |
+| **Raspberry Pi 4 nebo novější** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Hotový obraz pro kartu microSD s kapacitou 16 GB nebo více, zapsaný pomocí Raspberry Pi Imager. |
+| **Debian a Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Balíček pro Debian pro virtuální stroj nebo dedikovaný server. |
+| **Jiný Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Archiv se samotným programem. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Viz [dokumentace](https://docs.warda-dns.com/en/) | Jeden kontejner pro server nebo NAS, na kterém už Docker běží. |
+| **Všechny instalace** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Kontrolní součty všech souborů a jejich podpis. |
 
-V Raspberry Pi Imager 2 můžete také otevřít soubor [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda.rpi-imager-manifest): Imager pak před zápisem karty nastaví Wi-Fi, uživatele a SSH.
+V Raspberry Pi Imager 2 můžete také otevřít soubor [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest): Imager pak před zápisem karty nastaví Wi-Fi, uživatele a SSH.
 
 V Debianu nebo Ubuntu, v terminálu:
 
 ```sh
-sudo apt install ./warda_0.7.11_amd64.deb
+sudo apt install ./warda_0.7.13_amd64.deb
 ```
 
 S Dockerem, v terminálu:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.11
+docker pull ghcr.io/warda-dns/warda:0.7.13
 ```
 
 ## Ověřte stažený soubor
