@@ -29,28 +29,28 @@ Warda blockiert Werbung, Tracking und gefährliche Seiten für alle Geräte in I
 
 ## Download
 
-Neueste Version: **0.7.11** · [Versionshinweise](https://github.com/warda-dns/Releases/releases/tag/v0.7.11) · [alle Versionen](https://github.com/warda-dns/Releases/releases)
+Neueste Version: **0.7.13** · [Versionshinweise](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [alle Versionen](https://github.com/warda-dns/Releases/releases)
 
 | Warda installieren auf | Datei | Was es ist |
 |---|---|---|
-| **Raspberry Pi 4 oder neuer** | [`warda_0.7.11_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_raspberrypi-arm64.img.xz) | Ein fertiges Image für eine microSD-Karte ab 16 GB, geschrieben mit Raspberry Pi Imager. |
-| **Debian und Ubuntu**<br>amd64 · arm64 | [`warda_0.7.11_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_amd64.deb)<br>[`warda_0.7.11_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_arm64.deb) | Ein Debian-Paket für eine virtuelle Maschine oder einen dedizierten Server. |
-| **Ein anderes Linux**<br>amd64 · arm64 | [`warda_0.7.11_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_amd64.tar.gz)<br>[`warda_0.7.11_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda_0.7.11_linux_arm64.tar.gz) | Ein Archiv, das nur das Programm enthält. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.11`<br>Siehe [Dokumentation](https://docs.warda-dns.com/de/) | Ein einziger Container, für einen Server oder ein NAS, auf dem bereits Docker läuft. |
-| **Alle Installationen** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/SHA256SUMS.sig) | Die Prüfsummen aller Dateien und ihre Signatur. |
+| **Raspberry Pi 4 oder neuer** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Ein fertiges Image für eine microSD-Karte ab 16 GB, geschrieben mit Raspberry Pi Imager. |
+| **Debian und Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Ein Debian-Paket für eine virtuelle Maschine oder einen dedizierten Server. |
+| **Ein anderes Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Ein Archiv, das nur das Programm enthält. |
+| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Siehe [Dokumentation](https://docs.warda-dns.com/de/) | Ein einziger Container, für einen Server oder ein NAS, auf dem bereits Docker läuft. |
+| **Alle Installationen** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Die Prüfsummen aller Dateien und ihre Signatur. |
 
-Mit Raspberry Pi Imager 2 können Sie auch [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.11/warda.rpi-imager-manifest) öffnen: Imager richtet dann WLAN, Benutzer und SSH ein, bevor die Karte beschrieben wird.
+Mit Raspberry Pi Imager 2 können Sie auch [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest) öffnen: Imager richtet dann WLAN, Benutzer und SSH ein, bevor die Karte beschrieben wird.
 
 Unter Debian oder Ubuntu, in einem Terminal:
 
 ```sh
-sudo apt install ./warda_0.7.11_amd64.deb
+sudo apt install ./warda_0.7.13_amd64.deb
 ```
 
 Mit Docker, in einem Terminal:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.11
+docker pull ghcr.io/warda-dns/warda:0.7.13
 ```
 
 ## Download überprüfen
