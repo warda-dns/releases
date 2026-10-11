@@ -13,7 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
-[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#download)
+[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![ιστότοπος](https://img.shields.io/badge/%CE%B9%CF%83%CF%84%CF%8C%CF%84%CE%BF%CF%80%CE%BF%CF%82-warda--dns.com-6E46B7)](https://warda-dns.com/el/)
 [![τεκμηρίωση](https://img.shields.io/badge/%CF%84%CE%B5%CE%BA%CE%BC%CE%B7%CF%81%CE%AF%CF%89%CF%83%CE%B7-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/en/)
 
@@ -29,29 +29,40 @@
 
 ## Λήψη
 
-Τελευταία έκδοση: **0.7.13** · [σημειώσεις έκδοσης](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [όλες οι εκδόσεις](https://github.com/warda-dns/Releases/releases)
+Τελευταία έκδοση: **0.8.0** · [σημειώσεις έκδοσης](https://github.com/warda-dns/Releases/releases/tag/v0.8.0) · [όλες οι εκδόσεις](https://github.com/warda-dns/Releases/releases)
 
 | Για εγκατάσταση του Warda σε | Αρχείο | Τι είναι |
 |---|---|---|
-| **Raspberry Pi 4 ή νεότερο** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Έτοιμη εικόνα για κάρτα microSD 16 GB ή μεγαλύτερη, που γράφεται με το Raspberry Pi Imager. |
-| **Debian και Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Ένα πακέτο Debian για εικονική μηχανή ή αποκλειστικό διακομιστή. |
-| **Άλλο Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Ένα συμπιεσμένο αρχείο μόνο με το πρόγραμμα. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Δείτε την [τεκμηρίωση](https://docs.warda-dns.com/en/) | Ένα container, για διακομιστή ή NAS που ήδη τρέχει Docker. |
-| **Όλες οι εγκαταστάσεις** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Τα checksums κάθε αρχείου και η υπογραφή τους. |
+| **Raspberry Pi 4 ή νεότερο** | [`warda_0.8.0_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_raspberrypi-arm64.img.xz) | Έτοιμη εικόνα για κάρτα microSD 16 GB ή μεγαλύτερη, που γράφεται με το Raspberry Pi Imager. |
+| **Debian και Ubuntu**<br>amd64 · arm64 | [`warda_0.8.0_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_amd64.deb)<br>[`warda_0.8.0_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_arm64.deb) | Ένα πακέτο Debian για εικονική μηχανή ή αποκλειστικό διακομιστή. |
+| **Άλλο Linux**<br>amd64 · arm64 | [`warda_0.8.0_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_amd64.tar.gz)<br>[`warda_0.8.0_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_arm64.tar.gz) | Ένα συμπιεσμένο αρχείο μόνο με το πρόγραμμα. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.0` | Ένα container, για διακομιστή ή NAS που ήδη τρέχει Docker. Δείτε [Εγκατάσταση με Docker](#docker). |
+| **Όλες οι εγκαταστάσεις** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS.sig) | Τα checksums κάθε αρχείου και η υπογραφή τους. |
 
-Με το Raspberry Pi Imager 2 μπορείτε επίσης να ανοίξετε το [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest): το Imager ρυθμίζει τότε το Wi-Fi, τον χρήστη και το SSH πριν γράψει την κάρτα.
+Με το Raspberry Pi Imager 2 μπορείτε επίσης να ανοίξετε το [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda.rpi-imager-manifest): το Imager ρυθμίζει τότε το Wi-Fi, τον χρήστη και το SSH πριν γράψει την κάρτα.
 
 Σε Debian ή Ubuntu, σε ένα τερματικό:
 
 ```sh
-sudo apt install ./warda_0.7.13_amd64.deb
+sudo apt install ./warda_0.8.0_amd64.deb
 ```
 
-Με Docker, σε ένα τερματικό:
+<a name="docker"></a>
+
+## Εγκατάσταση με Docker
+
+Σε Raspberry Pi 4 ή νεότερο με λειτουργικό 64 bit, ή σε διακομιστή, μέσα σε έναν κενό φάκελο:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.13
+curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
+docker compose up -d
 ```
+
+Το Warda χρησιμοποιεί απευθείας το δίκτυο του μηχανήματος: οι θύρες 53 (DNS), 80 και 443 (διεπαφή web) πρέπει να είναι ελεύθερες. Αν ένας reverse proxy όπως το Traefik χρησιμοποιεί ήδη τις θύρες 80 και 443, ορίστε `WARDA_HTTP_LISTEN: ":8080"` και `WARDA_HTTPS_LISTEN: ":8443"` στο αρχείο πριν ξεκινήσετε το Warda. Αν τη θύρα 53 την κρατά το systemd-resolved, το αρχείο εξηγεί πώς να την ελευθερώσετε.
+
+Έπειτα ανοίξτε το `http://<διεύθυνση του μηχανήματος>` στον περιηγητή σας (με `:8080` στο τέλος, αν αλλάξατε τη θύρα) και ακολουθήστε τον οδηγό. Το `docker logs warda` δείχνει την ακριβή διεύθυνση και ονομάζει τη ρύθμιση που πρέπει να αλλάξει όταν μια θύρα χρησιμοποιείται ήδη.
+
+Για ενημέρωση, γράψτε τη νέα έκδοση στη γραμμή `image:` του αρχείου και μετά εκτελέστε `docker compose pull && docker compose up -d`.
 
 ## Επαληθεύστε τη λήψη σας
 
