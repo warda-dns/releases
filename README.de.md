@@ -13,7 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
-[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#download)
+[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![Website](https://img.shields.io/badge/Website-warda--dns.com-6E46B7)](https://warda-dns.com/de/)
 [![Dokumentation](https://img.shields.io/badge/Dokumentation-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/de/)
 
@@ -29,29 +29,40 @@ Warda blockiert Werbung, Tracking und gefährliche Seiten für alle Geräte in I
 
 ## Download
 
-Neueste Version: **0.7.13** · [Versionshinweise](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [alle Versionen](https://github.com/warda-dns/Releases/releases)
+Neueste Version: **0.8.0** · [Versionshinweise](https://github.com/warda-dns/Releases/releases/tag/v0.8.0) · [alle Versionen](https://github.com/warda-dns/Releases/releases)
 
 | Warda installieren auf | Datei | Was es ist |
 |---|---|---|
-| **Raspberry Pi 4 oder neuer** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Ein fertiges Image für eine microSD-Karte ab 16 GB, geschrieben mit Raspberry Pi Imager. |
-| **Debian und Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Ein Debian-Paket für eine virtuelle Maschine oder einen dedizierten Server. |
-| **Ein anderes Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Ein Archiv, das nur das Programm enthält. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Siehe [Dokumentation](https://docs.warda-dns.com/de/) | Ein einziger Container, für einen Server oder ein NAS, auf dem bereits Docker läuft. |
-| **Alle Installationen** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Die Prüfsummen aller Dateien und ihre Signatur. |
+| **Raspberry Pi 4 oder neuer** | [`warda_0.8.0_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_raspberrypi-arm64.img.xz) | Ein fertiges Image für eine microSD-Karte ab 16 GB, geschrieben mit Raspberry Pi Imager. |
+| **Debian und Ubuntu**<br>amd64 · arm64 | [`warda_0.8.0_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_amd64.deb)<br>[`warda_0.8.0_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_arm64.deb) | Ein Debian-Paket für eine virtuelle Maschine oder einen dedizierten Server. |
+| **Ein anderes Linux**<br>amd64 · arm64 | [`warda_0.8.0_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_amd64.tar.gz)<br>[`warda_0.8.0_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_arm64.tar.gz) | Ein Archiv, das nur das Programm enthält. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.0` | Ein einziger Container, für einen Server oder ein NAS, auf dem bereits Docker läuft. Siehe [Mit Docker installieren](#docker). |
+| **Alle Installationen** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS.sig) | Die Prüfsummen aller Dateien und ihre Signatur. |
 
-Mit Raspberry Pi Imager 2 können Sie auch [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest) öffnen: Imager richtet dann WLAN, Benutzer und SSH ein, bevor die Karte beschrieben wird.
+Mit Raspberry Pi Imager 2 können Sie auch [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda.rpi-imager-manifest) öffnen: Imager richtet dann WLAN, Benutzer und SSH ein, bevor die Karte beschrieben wird.
 
 Unter Debian oder Ubuntu, in einem Terminal:
 
 ```sh
-sudo apt install ./warda_0.7.13_amd64.deb
+sudo apt install ./warda_0.8.0_amd64.deb
 ```
 
-Mit Docker, in einem Terminal:
+<a name="docker"></a>
+
+## Mit Docker installieren
+
+Auf einem Raspberry Pi 4 oder neuer mit 64-Bit-System oder auf einem Server, in einem leeren Verzeichnis:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.13
+curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
+docker compose up -d
 ```
+
+Warda nutzt direkt das Netzwerk des Rechners: Die Ports 53 (DNS), 80 und 443 (Weboberfläche) müssen frei sein. Belegt bereits ein Reverse Proxy wie Traefik die Ports 80 und 443, tragen Sie vor dem Start von Warda `WARDA_HTTP_LISTEN: ":8080"` und `WARDA_HTTPS_LISTEN: ":8443"` in die Datei ein. Belegt systemd-resolved den Port 53, erklärt die Datei, wie Sie ihn freigeben.
+
+Öffnen Sie dann `http://<Adresse des Rechners>` im Browser (gefolgt von `:8080`, wenn Sie den Port geändert haben) und folgen Sie dem Assistenten. `docker logs warda` zeigt die genaue Adresse und nennt die zu ändernde Einstellung, wenn ein Port bereits belegt ist.
+
+Zum Aktualisieren tragen Sie die neue Version in die Zeile `image:` der Datei ein und führen dann `docker compose pull && docker compose up -d` aus.
 
 ## Download überprüfen
 
