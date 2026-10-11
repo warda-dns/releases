@@ -13,7 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
-[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#download)
+[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![site](https://img.shields.io/badge/site-warda--dns.com-6E46B7)](https://warda-dns.com/pt/)
 [![documentação](https://img.shields.io/badge/documenta%C3%A7%C3%A3o-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/pt/)
 
@@ -29,29 +29,40 @@ O Warda bloqueia publicidade, rastreamento e sites perigosos em todos os disposi
 
 ## Transferir
 
-Última versão: **0.7.13** · [notas da versão](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [todas as versões](https://github.com/warda-dns/Releases/releases)
+Última versão: **0.8.0** · [notas da versão](https://github.com/warda-dns/Releases/releases/tag/v0.8.0) · [todas as versões](https://github.com/warda-dns/Releases/releases)
 
 | Para instalar o Warda em | Ficheiro | O que é |
 |---|---|---|
-| **Raspberry Pi 4 ou posterior** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Uma imagem pronta para um cartão microSD de 16 GB ou mais, gravada com o Raspberry Pi Imager. |
-| **Debian e Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Um pacote Debian para uma máquina virtual ou um servidor dedicado. |
-| **Outro Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Um arquivo apenas com o programa. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Consulte a [documentação](https://docs.warda-dns.com/pt/) | Um único contentor, para um servidor ou uma NAS que já corra Docker. |
-| **Todas as instalações** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | As somas de verificação de cada ficheiro e a respetiva assinatura. |
+| **Raspberry Pi 4 ou posterior** | [`warda_0.8.0_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_raspberrypi-arm64.img.xz) | Uma imagem pronta para um cartão microSD de 16 GB ou mais, gravada com o Raspberry Pi Imager. |
+| **Debian e Ubuntu**<br>amd64 · arm64 | [`warda_0.8.0_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_amd64.deb)<br>[`warda_0.8.0_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_arm64.deb) | Um pacote Debian para uma máquina virtual ou um servidor dedicado. |
+| **Outro Linux**<br>amd64 · arm64 | [`warda_0.8.0_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_amd64.tar.gz)<br>[`warda_0.8.0_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_arm64.tar.gz) | Um arquivo apenas com o programa. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.0` | Um único contentor, para um servidor ou uma NAS que já corra Docker. Consulte [Instalar com Docker](#docker). |
+| **Todas as instalações** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS.sig) | As somas de verificação de cada ficheiro e a respetiva assinatura. |
 
-Com o Raspberry Pi Imager 2, também pode abrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest): o Imager configura então o Wi-Fi, o utilizador e o SSH antes de gravar o cartão.
+Com o Raspberry Pi Imager 2, também pode abrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda.rpi-imager-manifest): o Imager configura então o Wi-Fi, o utilizador e o SSH antes de gravar o cartão.
 
 Em Debian ou Ubuntu, num terminal:
 
 ```sh
-sudo apt install ./warda_0.7.13_amd64.deb
+sudo apt install ./warda_0.8.0_amd64.deb
 ```
 
-Com Docker, num terminal:
+<a name="docker"></a>
+
+## Instalar com Docker
+
+Num Raspberry Pi 4 ou mais recente com um sistema de 64 bits, ou num servidor, numa pasta vazia:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.13
+curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
+docker compose up -d
 ```
+
+O Warda usa diretamente a rede da máquina: as portas 53 (DNS), 80 e 443 (interface web) têm de estar livres. Se um proxy inverso como o Traefik já usa as portas 80 e 443, defina `WARDA_HTTP_LISTEN: ":8080"` e `WARDA_HTTPS_LISTEN: ":8443"` no ficheiro antes de iniciar o Warda. Se o systemd-resolved ocupa a porta 53, o ficheiro explica como a libertar.
+
+Depois abra `http://<endereço da máquina>` no seu navegador (seguido de `:8080` se mudou a porta) e siga o assistente. `docker logs warda` indica o endereço exato e a definição a alterar quando uma porta já está em uso.
+
+Para atualizar, escreva a nova versão na linha `image:` do ficheiro e depois execute `docker compose pull && docker compose up -d`.
 
 ## Verificar a sua transferência
 
