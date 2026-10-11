@@ -13,7 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
-[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#download)
+[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![webhely](https://img.shields.io/badge/webhely-warda--dns.com-6E46B7)](https://warda-dns.com/hu/)
 [![dokumentáció](https://img.shields.io/badge/dokument%C3%A1ci%C3%B3-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/en/)
 
@@ -29,29 +29,40 @@ A Warda letiltja a reklámokat, a követést és a veszélyes oldalakat az ottho
 
 ## Letöltés
 
-Legújabb verzió: **0.7.13** · [kiadási megjegyzések](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [minden verzió](https://github.com/warda-dns/Releases/releases)
+Legújabb verzió: **0.8.0** · [kiadási megjegyzések](https://github.com/warda-dns/Releases/releases/tag/v0.8.0) · [minden verzió](https://github.com/warda-dns/Releases/releases)
 
 | A Warda telepítése ide | Fájl | Mi ez |
 |---|---|---|
-| **Raspberry Pi 4 vagy újabb** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Kész lemezkép legalább 16 GB-os microSD-kártyára, a Raspberry Pi Imager programmal felírva. |
-| **Debian és Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Debian-csomag virtuális gépre vagy dedikált szerverre. |
-| **Más Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Archívum, amely csak a programot tartalmazza. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Lásd a [dokumentációt](https://docs.warda-dns.com/en/) | Egyetlen konténer olyan szerverre vagy NAS-ra, amelyen már fut a Docker. |
-| **Minden telepítés** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Az összes fájl ellenőrzőösszege és azok aláírása. |
+| **Raspberry Pi 4 vagy újabb** | [`warda_0.8.0_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_raspberrypi-arm64.img.xz) | Kész lemezkép legalább 16 GB-os microSD-kártyára, a Raspberry Pi Imager programmal felírva. |
+| **Debian és Ubuntu**<br>amd64 · arm64 | [`warda_0.8.0_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_amd64.deb)<br>[`warda_0.8.0_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_arm64.deb) | Debian-csomag virtuális gépre vagy dedikált szerverre. |
+| **Más Linux**<br>amd64 · arm64 | [`warda_0.8.0_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_amd64.tar.gz)<br>[`warda_0.8.0_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_arm64.tar.gz) | Archívum, amely csak a programot tartalmazza. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.0` | Egyetlen konténer olyan szerverre vagy NAS-ra, amelyen már fut a Docker. Lásd: [Telepítés Dockerrel](#docker). |
+| **Minden telepítés** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS.sig) | Az összes fájl ellenőrzőösszege és azok aláírása. |
 
-A Raspberry Pi Imager 2 programban megnyithatja a [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest) fájlt is: az Imager ekkor a kártya írása előtt beállítja a Wi-Fi-t, a felhasználót és az SSH-t.
+A Raspberry Pi Imager 2 programban megnyithatja a [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda.rpi-imager-manifest) fájlt is: az Imager ekkor a kártya írása előtt beállítja a Wi-Fi-t, a felhasználót és az SSH-t.
 
 Debian vagy Ubuntu rendszeren, terminálban:
 
 ```sh
-sudo apt install ./warda_0.7.13_amd64.deb
+sudo apt install ./warda_0.8.0_amd64.deb
 ```
 
-Dockerrel, terminálban:
+<a name="docker"></a>
+
+## Telepítés Dockerrel
+
+64 bites rendszert futtató Raspberry Pi 4-en vagy újabbon, illetve szerveren, egy üres könyvtárban:
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.13
+curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
+docker compose up -d
 ```
+
+A Warda közvetlenül a gép hálózatát használja: az 53-as (DNS), a 80-as és a 443-as (webes felület) portnak szabadnak kell lennie. Ha a 80-as és a 443-as portot már egy reverse proxy, például a Traefik használja, a Warda indítása előtt állítsa be a fájlban a `WARDA_HTTP_LISTEN: ":8080"` és a `WARDA_HTTPS_LISTEN: ":8443"` értéket. Ha az 53-as portot a systemd-resolved foglalja, a fájl leírja, hogyan szabadíthatja fel.
+
+Ezután nyissa meg a böngészőben a `http://<a gép címe>` címet (a végén `:8080`-nal, ha áthelyezte a portot), és kövesse a varázslót. A `docker logs warda` megadja a pontos címet, és foglalt port esetén megnevezi a módosítandó beállítást.
+
+Frissítéshez írja be az új verziót a fájl `image:` sorába, majd futtassa a `docker compose pull && docker compose up -d` parancsot.
 
 ## A letöltés ellenőrzése
 
