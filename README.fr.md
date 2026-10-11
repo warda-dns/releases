@@ -13,7 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
-[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#download)
+[![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![site web](https://img.shields.io/badge/site%20web-warda--dns.com-6E46B7)](https://warda-dns.com/fr/)
 [![documentation](https://img.shields.io/badge/documentation-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/fr/)
 
@@ -29,29 +29,40 @@ Warda bloque la publicité, le pistage et les sites dangereux pour tous les appa
 
 ## Télécharger
 
-Dernière version : **0.7.13** · [notes de version](https://github.com/warda-dns/Releases/releases/tag/v0.7.13) · [toutes les versions](https://github.com/warda-dns/Releases/releases)
+Dernière version : **0.8.0** · [notes de version](https://github.com/warda-dns/Releases/releases/tag/v0.8.0) · [toutes les versions](https://github.com/warda-dns/Releases/releases)
 
 | Pour installer Warda sur | Fichier | Ce que c’est |
 |---|---|---|
-| **Raspberry Pi 4 ou plus récent** | [`warda_0.7.13_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_raspberrypi-arm64.img.xz) | Une image prête pour une carte microSD de 16 Go ou plus, écrite avec Raspberry Pi Imager. |
-| **Debian et Ubuntu**<br>amd64 · arm64 | [`warda_0.7.13_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_amd64.deb)<br>[`warda_0.7.13_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_arm64.deb) | Un paquet Debian pour une machine virtuelle ou un serveur dédié. |
-| **Un autre Linux**<br>amd64 · arm64 | [`warda_0.7.13_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_amd64.tar.gz)<br>[`warda_0.7.13_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda_0.7.13_linux_arm64.tar.gz) | Une archive avec le programme seul. |
-| **Docker**<br>amd64 · arm64 | `ghcr.io/warda-dns/warda:0.7.13`<br>Voir la [documentation](https://docs.warda-dns.com/fr/) | Un seul conteneur, pour un serveur ou un NAS qui fait déjà tourner Docker. |
-| **Toutes les installations** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/SHA256SUMS.sig) | Les sommes de contrôle de chaque fichier, et leur signature. |
+| **Raspberry Pi 4 ou plus récent** | [`warda_0.8.0_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_raspberrypi-arm64.img.xz) | Une image prête pour une carte microSD de 16 Go ou plus, écrite avec Raspberry Pi Imager. |
+| **Debian et Ubuntu**<br>amd64 · arm64 | [`warda_0.8.0_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_amd64.deb)<br>[`warda_0.8.0_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_arm64.deb) | Un paquet Debian pour une machine virtuelle ou un serveur dédié. |
+| **Un autre Linux**<br>amd64 · arm64 | [`warda_0.8.0_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_amd64.tar.gz)<br>[`warda_0.8.0_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda_0.8.0_linux_arm64.tar.gz) | Une archive avec le programme seul. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.0` | Un seul conteneur, pour un serveur ou un NAS qui fait déjà tourner Docker. Voir [Installer avec Docker](#docker). |
+| **Toutes les installations** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/SHA256SUMS.sig) | Les sommes de contrôle de chaque fichier, et leur signature. |
 
-Avec Raspberry Pi Imager 2, vous pouvez aussi ouvrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.7.13/warda.rpi-imager-manifest) : Imager règle alors le Wi-Fi, l’utilisateur et SSH avant d’écrire la carte.
+Avec Raspberry Pi Imager 2, vous pouvez aussi ouvrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.0/warda.rpi-imager-manifest) : Imager règle alors le Wi-Fi, l’utilisateur et SSH avant d’écrire la carte.
 
 Sous Debian ou Ubuntu, dans un terminal :
 
 ```sh
-sudo apt install ./warda_0.7.13_amd64.deb
+sudo apt install ./warda_0.8.0_amd64.deb
 ```
 
-Avec Docker, dans un terminal :
+<a name="docker"></a>
+
+## Installer avec Docker
+
+Sur un Raspberry Pi 4 ou plus récent avec un système 64 bits, ou sur un serveur, dans un dossier vide :
 
 ```sh
-docker pull ghcr.io/warda-dns/warda:0.7.13
+curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
+docker compose up -d
 ```
+
+Warda utilise directement le réseau de la machine : les ports 53 (DNS), 80 et 443 (interface web) doivent être libres. Si un reverse proxy comme Traefik occupe déjà les ports 80 et 443, indiquez `WARDA_HTTP_LISTEN: ":8080"` et `WARDA_HTTPS_LISTEN: ":8443"` dans le fichier avant de lancer Warda. Si systemd-resolved occupe le port 53, le fichier explique comment le libérer.
+
+Ouvrez ensuite `http://<adresse de la machine>` dans votre navigateur (suivi de `:8080` si vous avez changé le port) et laissez-vous guider par l’assistant. `docker logs warda` donne l’adresse exacte, et indique le réglage à modifier quand un port est déjà utilisé.
+
+Pour mettre à jour, écrivez la nouvelle version dans la ligne `image:` du fichier, puis lancez `docker compose pull && docker compose up -d`.
 
 ## Vérifier votre téléchargement
 
