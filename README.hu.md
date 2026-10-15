@@ -29,22 +29,22 @@ A Warda letiltja a reklámokat, a követést és a veszélyes oldalakat az ottho
 
 ## Letöltés
 
-Legújabb verzió: **0.8.6** · [kiadási megjegyzések](https://github.com/warda-dns/Releases/releases/tag/v0.8.6) · [minden verzió](https://github.com/warda-dns/Releases/releases)
+Legújabb verzió: **0.8.7** · [kiadási megjegyzések](https://github.com/warda-dns/Releases/releases/tag/v0.8.7) · [minden verzió](https://github.com/warda-dns/Releases/releases)
 
 | A Warda telepítése ide | Fájl | Mi ez |
 |---|---|---|
-| **Raspberry Pi 4 vagy újabb** | [`warda_0.8.6_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/warda_0.8.6_raspberrypi-arm64.img.xz) | Kész lemezkép legalább 16 GB-os microSD-kártyára, a Raspberry Pi Imager programmal felírva. |
-| **Debian és Ubuntu**<br>amd64 · arm64 | [`warda_0.8.6_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/warda_0.8.6_amd64.deb)<br>[`warda_0.8.6_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/warda_0.8.6_arm64.deb) | Debian-csomag virtuális gépre vagy dedikált szerverre. |
-| **Más Linux**<br>amd64 · arm64 | [`warda_0.8.6_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/warda_0.8.6_linux_amd64.tar.gz)<br>[`warda_0.8.6_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/warda_0.8.6_linux_arm64.tar.gz) | Archívum, amely csak a programot tartalmazza. |
-| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.6` | Egyetlen konténer olyan szerverre vagy NAS-ra, amelyen már fut a Docker. Lásd: [Telepítés Dockerrel](#docker). |
-| **Minden telepítés** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/SHA256SUMS.sig) | Az összes fájl ellenőrzőösszege és azok aláírása. |
+| **Raspberry Pi 4 vagy újabb** | [`warda_0.8.7_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/warda_0.8.7_raspberrypi-arm64.img.xz) | Kész lemezkép legalább 16 GB-os microSD-kártyára, a Raspberry Pi Imager programmal felírva. |
+| **Debian és Ubuntu**<br>amd64 · arm64 | [`warda_0.8.7_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/warda_0.8.7_amd64.deb)<br>[`warda_0.8.7_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/warda_0.8.7_arm64.deb) | Debian-csomag virtuális gépre vagy dedikált szerverre. |
+| **Más Linux**<br>amd64 · arm64 | [`warda_0.8.7_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/warda_0.8.7_linux_amd64.tar.gz)<br>[`warda_0.8.7_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/warda_0.8.7_linux_arm64.tar.gz) | Archívum, amely csak a programot tartalmazza. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.7` | Egyetlen konténer olyan szerverre vagy NAS-ra, amelyen már fut a Docker. Lásd: [Telepítés Dockerrel](#docker). |
+| **Minden telepítés** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/SHA256SUMS.sig) | Az összes fájl ellenőrzőösszege és azok aláírása. |
 
-A Raspberry Pi Imager 2 programban megnyithatja a [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.6/warda.rpi-imager-manifest) fájlt is: az Imager ekkor a kártya írása előtt beállítja a Wi-Fi-t, a felhasználót és az SSH-t.
+A Raspberry Pi Imager 2 programban megnyithatja a [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.7/warda.rpi-imager-manifest) fájlt is: az Imager ekkor a kártya írása előtt beállítja a Wi-Fi-t, a felhasználót és az SSH-t.
 
 Debian vagy Ubuntu rendszeren, terminálban:
 
 ```sh
-sudo apt install ./warda_0.8.6_amd64.deb
+sudo apt install ./warda_0.8.7_amd64.deb
 ```
 
 <a name="docker"></a>
