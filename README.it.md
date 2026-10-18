@@ -29,22 +29,22 @@ Warda blocca pubblicità, tracciamento e siti pericolosi per tutti i dispositivi
 
 ## Scarica
 
-Ultima versione: **0.8.9** · [note di rilascio](https://github.com/warda-dns/Releases/releases/tag/v0.8.9) · [tutte le versioni](https://github.com/warda-dns/Releases/releases)
+Ultima versione: **0.9.0** · [note di rilascio](https://github.com/warda-dns/Releases/releases/tag/v0.9.0) · [tutte le versioni](https://github.com/warda-dns/Releases/releases)
 
 | Per installare Warda su | File | Che cos’è |
 |---|---|---|
-| **Raspberry Pi 4 o successivo** | [`warda_0.8.9_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/warda_0.8.9_raspberrypi-arm64.img.xz) | Un'immagine pronta per una scheda microSD da 16 GB o più, da scrivere con Raspberry Pi Imager. |
-| **Debian e Ubuntu**<br>amd64 · arm64 | [`warda_0.8.9_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/warda_0.8.9_amd64.deb)<br>[`warda_0.8.9_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/warda_0.8.9_arm64.deb) | Un pacchetto Debian per una macchina virtuale o un server dedicato. |
-| **Un altro Linux**<br>amd64 · arm64 | [`warda_0.8.9_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/warda_0.8.9_linux_amd64.tar.gz)<br>[`warda_0.8.9_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/warda_0.8.9_linux_arm64.tar.gz) | Un archivio con il solo programma. |
-| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.8.9` | Un solo container, per un server o un NAS che già esegue Docker. Vedi [Installare con Docker](#docker). |
-| **Tutte le installazioni** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/SHA256SUMS.sig) | Le somme di controllo di ogni file e la loro firma. |
+| **Raspberry Pi 4 o successivo** | [`warda_0.9.0_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/warda_0.9.0_raspberrypi-arm64.img.xz) | Un'immagine pronta per una scheda microSD da 16 GB o più, da scrivere con Raspberry Pi Imager. |
+| **Debian e Ubuntu**<br>amd64 · arm64 | [`warda_0.9.0_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/warda_0.9.0_amd64.deb)<br>[`warda_0.9.0_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/warda_0.9.0_arm64.deb) | Un pacchetto Debian per una macchina virtuale o un server dedicato. |
+| **Un altro Linux**<br>amd64 · arm64 | [`warda_0.9.0_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/warda_0.9.0_linux_amd64.tar.gz)<br>[`warda_0.9.0_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/warda_0.9.0_linux_arm64.tar.gz) | Un archivio con il solo programma. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.0` | Un solo container, per un server o un NAS che già esegue Docker. Vedi [Installare con Docker](#docker). |
+| **Tutte le installazioni** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/SHA256SUMS.sig) | Le somme di controllo di ogni file e la loro firma. |
 
-Con Raspberry Pi Imager 2 puoi anche aprire [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.8.9/warda.rpi-imager-manifest): Imager imposta allora il Wi-Fi, l’utente e SSH prima di scrivere la scheda.
+Con Raspberry Pi Imager 2 puoi anche aprire [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.0/warda.rpi-imager-manifest): Imager imposta allora il Wi-Fi, l’utente e SSH prima di scrivere la scheda.
 
 Su Debian o Ubuntu, in un terminale:
 
 ```sh
-sudo apt install ./warda_0.8.9_amd64.deb
+sudo apt install ./warda_0.9.0_amd64.deb
 ```
 
 <a name="docker"></a>
