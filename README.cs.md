@@ -29,22 +29,22 @@ Warda blokuje reklamu, sledování a nebezpečné weby pro všechna zařízení 
 
 ## Stáhnout
 
-Nejnovější verze: **0.9.1** · [poznámky k vydání](https://github.com/warda-dns/Releases/releases/tag/v0.9.1) · [všechny verze](https://github.com/warda-dns/Releases/releases)
+Nejnovější verze: **0.9.2** · [poznámky k vydání](https://github.com/warda-dns/Releases/releases/tag/v0.9.2) · [všechny verze](https://github.com/warda-dns/Releases/releases)
 
 | Instalace Wardy na | Soubor | Co to je |
 |---|---|---|
-| **Raspberry Pi 4 nebo novější** | [`warda_0.9.1_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/warda_0.9.1_raspberrypi-arm64.img.xz) | Hotový obraz pro kartu microSD s kapacitou 16 GB nebo více, zapsaný pomocí Raspberry Pi Imager. |
-| **Debian a Ubuntu**<br>amd64 · arm64 | [`warda_0.9.1_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/warda_0.9.1_amd64.deb)<br>[`warda_0.9.1_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/warda_0.9.1_arm64.deb) | Balíček pro Debian pro virtuální stroj nebo dedikovaný server. |
-| **Jiný Linux**<br>amd64 · arm64 | [`warda_0.9.1_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/warda_0.9.1_linux_amd64.tar.gz)<br>[`warda_0.9.1_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/warda_0.9.1_linux_arm64.tar.gz) | Archiv se samotným programem. |
-| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.1` | Jeden kontejner pro server nebo NAS, na kterém už Docker běží. Viz [Instalace pomocí Dockeru](#docker). |
-| **Všechny instalace** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/SHA256SUMS.sig) | Kontrolní součty všech souborů a jejich podpis. |
+| **Raspberry Pi 4 nebo novější** | [`warda_0.9.2_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_raspberrypi-arm64.img.xz) | Hotový obraz pro kartu microSD s kapacitou 16 GB nebo více, zapsaný pomocí Raspberry Pi Imager. |
+| **Debian a Ubuntu**<br>amd64 · arm64 | [`warda_0.9.2_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_amd64.deb)<br>[`warda_0.9.2_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_arm64.deb) | Balíček pro Debian pro virtuální stroj nebo dedikovaný server. |
+| **Jiný Linux**<br>amd64 · arm64 | [`warda_0.9.2_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_linux_amd64.tar.gz)<br>[`warda_0.9.2_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_linux_arm64.tar.gz) | Archiv se samotným programem. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.2` | Jeden kontejner pro server nebo NAS, na kterém už Docker běží. Viz [Instalace pomocí Dockeru](#docker). |
+| **Všechny instalace** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/SHA256SUMS.sig) | Kontrolní součty všech souborů a jejich podpis. |
 
-V Raspberry Pi Imager 2 můžete také otevřít soubor [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.1/warda.rpi-imager-manifest): Imager pak před zápisem karty nastaví Wi-Fi, uživatele a SSH.
+V Raspberry Pi Imager 2 můžete také otevřít soubor [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda.rpi-imager-manifest): Imager pak před zápisem karty nastaví Wi-Fi, uživatele a SSH.
 
 V Debianu nebo Ubuntu, v terminálu:
 
 ```sh
-sudo apt install ./warda_0.9.1_amd64.deb
+sudo apt install ./warda_0.9.2_amd64.deb
 ```
 
 <a name="docker"></a>
