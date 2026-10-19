@@ -13,6 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
+[![Fedora · RHEL](https://img.shields.io/badge/Fedora%20%C2%B7%20RHEL-amd64%20%C2%B7%20arm64-294172?logo=fedora&logoColor=white)](#download)
 [![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![web](https://img.shields.io/badge/web-warda--dns.com-6E46B7)](https://warda-dns.com/cs/)
 [![dokumentace](https://img.shields.io/badge/dokumentace-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/en/)
@@ -29,23 +30,32 @@ Warda blokuje reklamu, sledování a nebezpečné weby pro všechna zařízení 
 
 ## Stáhnout
 
-Nejnovější verze: **0.9.2** · [poznámky k vydání](https://github.com/warda-dns/Releases/releases/tag/v0.9.2) · [všechny verze](https://github.com/warda-dns/Releases/releases)
+Nejnovější verze: **0.9.3** · [poznámky k vydání](https://github.com/warda-dns/Releases/releases/tag/v0.9.3) · [všechny verze](https://github.com/warda-dns/Releases/releases)
 
 | Instalace Wardy na | Soubor | Co to je |
 |---|---|---|
-| **Raspberry Pi 4 nebo novější** | [`warda_0.9.2_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_raspberrypi-arm64.img.xz) | Hotový obraz pro kartu microSD s kapacitou 16 GB nebo více, zapsaný pomocí Raspberry Pi Imager. |
-| **Debian a Ubuntu**<br>amd64 · arm64 | [`warda_0.9.2_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_amd64.deb)<br>[`warda_0.9.2_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_arm64.deb) | Balíček pro Debian pro virtuální stroj nebo dedikovaný server. |
-| **Jiný Linux**<br>amd64 · arm64 | [`warda_0.9.2_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_linux_amd64.tar.gz)<br>[`warda_0.9.2_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_linux_arm64.tar.gz) | Archiv se samotným programem. |
-| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.2` | Jeden kontejner pro server nebo NAS, na kterém už Docker běží. Viz [Instalace pomocí Dockeru](#docker). |
-| **Všechny instalace** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/SHA256SUMS.sig) | Kontrolní součty všech souborů a jejich podpis. |
+| **Raspberry Pi 4 nebo novější** | [`warda_0.9.3_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_raspberrypi-arm64.img.xz) | Hotový obraz pro kartu microSD s kapacitou 16 GB nebo více, zapsaný pomocí Raspberry Pi Imager. |
+| **Debian a Ubuntu**<br>amd64 · arm64 | [`warda_0.9.3_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_amd64.deb)<br>[`warda_0.9.3_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_arm64.deb) | Balíček pro Debian pro virtuální stroj nebo dedikovaný server. |
+| **Fedora, RHEL, Rocky Linux, AlmaLinux**<br>amd64 · arm64 | [`warda-0.9.3-1.x86_64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda-0.9.3-1.x86_64.rpm)<br>[`warda-0.9.3-1.aarch64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda-0.9.3-1.aarch64.rpm) | Balíček rpm pro virtuální stroj nebo dedikovaný server. |
+| **Jiný Linux**<br>amd64 · arm64 | [`warda_0.9.3_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_linux_amd64.tar.gz)<br>[`warda_0.9.3_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_linux_arm64.tar.gz) | Archiv se samotným programem. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.3` | Jeden kontejner pro server nebo NAS, na kterém už Docker běží. Viz [Instalace pomocí Dockeru](#docker). |
+| **Všechny instalace** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/SHA256SUMS.sig) | Kontrolní součty všech souborů a jejich podpis. |
 
-V Raspberry Pi Imager 2 můžete také otevřít soubor [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda.rpi-imager-manifest): Imager pak před zápisem karty nastaví Wi-Fi, uživatele a SSH.
+V Raspberry Pi Imager 2 můžete také otevřít soubor [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda.rpi-imager-manifest): Imager pak před zápisem karty nastaví Wi-Fi, uživatele a SSH.
 
 V Debianu nebo Ubuntu, v terminálu:
 
 ```sh
-sudo apt install ./warda_0.9.2_amd64.deb
+sudo apt install ./warda_0.9.3_amd64.deb
 ```
+
+Ve Fedoře, RHEL, Rocky Linuxu nebo AlmaLinuxu, v terminálu:
+
+```sh
+sudo dnf install ./warda-0.9.3-1.x86_64.rpm
+```
+
+Balíček otevře ve firewalld porty, které Warda potřebuje (služba `warda`).
 
 <a name="docker"></a>
 
@@ -57,6 +67,8 @@ Na Raspberry Pi 4 nebo novějším s 64bitovým systémem, nebo na serveru, v pr
 curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
 docker compose up -d
 ```
+
+Stejný soubor je také v kořeni tohoto repozitáře, [`docker-compose.yml`](docker-compose.yml): vždy ten z nejnovější verze.
 
 Warda používá přímo síť počítače: porty 53 (DNS), 80 a 443 (webové rozhraní) musí být volné. Pokud porty 80 a 443 už používá reverzní proxy, například Traefik, nastavte před spuštěním Wardy v souboru `WARDA_HTTP_LISTEN: ":8080"` a `WARDA_HTTPS_LISTEN: ":8443"`. Pokud port 53 drží systemd-resolved, soubor vysvětluje, jak ho uvolnit.
 
@@ -83,7 +95,7 @@ MCowBQYDK2VwAyEAnDKR0w4ktuxZVIezyPwGx8EMLfZhgf21R5P4efLjMXY=
 
 ## Instalace
 
-Dokumentace vás provede krok za krokem, pro Raspberry Pi, Docker, Debian a Ubuntu: **[docs.warda-dns.com](https://docs.warda-dns.com/en/)**. Jakmile Warda běží, otevřete ji v prohlížeči a postupujte podle průvodce.
+Dokumentace vás provede krok za krokem, pro Raspberry Pi, Docker, Debian, Ubuntu, Fedoru a RHEL: **[docs.warda-dns.com](https://docs.warda-dns.com/en/)**. Jakmile Warda běží, otevřete ji v prohlížeči a postupujte podle průvodce.
 
 ## Aktualizace
 
