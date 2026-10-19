@@ -1,0 +1,93 @@
+# Warda with Docker Compose (Raspberry Pi 4 or later with a 64-bit system,
+# or any amd64 / arm64 server). Copy this file into an empty directory,
+# check the ports below, then: docker compose up -d
+#
+# This file comes with Warda 0.9.3: its image is pinned to that version.
+# The file of the latest version: https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
+#
+# Host networking lets Warda identify the devices by hardware address and
+# answer on every address of the machine: there is no "ports:" mapping, the
+# ports are those of the machine itself. A port already used by another
+# program stops Warda with a message that names the setting to change
+# (docker logs warda); Docker restarts it with a growing delay until then.
+services:
+  warda:
+    # A version, rather than "latest": the installation does not change
+    # behind your back and you go back to the previous version by writing
+    # it again. A new version is announced in the interface of Warda; to
+    # install it, write its number here, then:
+    #   docker compose pull && docker compose up -d
+    image: ghcr.io/warda-dns/warda:0.9.3
+    container_name: warda
+    network_mode: host
+    restart: unless-stopped
+    # With host networking the ports below 1024 need a capability, which
+    # only the root user of the container gets. Besides it, root keeps only
+    # the rights to use the data directory of the image (owned by 65532).
+    user: "0:0"
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE, NET_RAW, DAC_OVERRIDE, FOWNER]
+    security_opt: ["no-new-privileges:true"]
+    # Warda writes only in its data directory (the volume below): no tmpfs
+    # is needed.
+    read_only: true
+    environment:
+      TZ: Europe/Paris
+      # Web interface. Port 80 (plain HTTP, which sends the browser to
+      # HTTPS) and port 443 (the interface and its API). If another program
+      # of this machine already uses them (a reverse proxy such as Traefik,
+      # nginx or Caddy, the interface of a NAS), give Warda other ports,
+      # for example ":8080" and ":8443", then open
+      # http://<address of this machine>:8080 (the health check follows
+      # WARDA_HTTP_LISTEN by itself).
+      WARDA_HTTP_LISTEN: ":80"
+      WARDA_HTTPS_LISTEN: ":443"
+      # DNS: port 53, which the devices always ask, must be free. On
+      # Debian or Ubuntu the stub of systemd-resolved holds it: set
+      # DNSStubListener=no in /etc/systemd/resolved.conf, then
+      # systemctl restart systemd-resolved. Stop Pi-hole, AdGuard Home or
+      # dnsmasq first. To share the port with another DNS server, make
+      # Warda listen on one address of this machine, e.g.
+      # "192.168.1.10:53".
+      WARDA_DNS_LISTEN: ":53"
+      # DNS over TLS and over QUIC (port 853), used only once turned on in
+      # the interface: WARDA_DOT_LISTEN and WARDA_DOQ_LISTEN.
+      # Other settings: see "Configuration" in the documentation,
+      # https://docs.warda-dns.com (WARDA_*).
+    volumes:
+      - warda-data:/var/lib/warda
+    # The health check of the image (warda healthcheck) is used as is.
+    # The log of the container, bounded (a memory card wears out).
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # High availability (Warda Business): two machines, each with this file.
+  # Warda writes the configuration of keepalived in its data directory
+  # (keepalived.conf, page High availability); keepalived runs in its own
+  # container on the network of the host, with the right to add the shared
+  # address (NET_ADMIN), the program of Warda for its checks and the data
+  # directory for the state of VRRP. After a change of the shared address,
+  # restart it: docker compose restart keepalived
+  #
+  # keepalived:
+  #   build:
+  #     dockerfile_inline: |
+  #       FROM ghcr.io/warda-dns/warda:0.9.3 AS warda
+  #       FROM alpine:3.22
+  #       RUN apk add --no-cache keepalived
+  #       COPY --from=warda /usr/local/bin/warda /usr/local/bin/warda
+  #   container_name: warda-keepalived
+  #   network_mode: host
+  #   restart: unless-stopped
+  #   cap_drop: [ALL]
+  #   cap_add: [NET_ADMIN, NET_BROADCAST, NET_RAW, DAC_OVERRIDE]
+  #   volumes:
+  #     - warda-data:/var/lib/warda
+  #   command: ["keepalived", "--dont-fork", "--log-console", "--use-file", "/var/lib/warda/keepalived.conf"]
+  #   depends_on: [warda]
+
+volumes:
+  warda-data:
