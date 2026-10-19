@@ -13,6 +13,7 @@
 
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-arm64-C51A4A?logo=raspberrypi&logoColor=white)](#download)
 [![Debian · Ubuntu](https://img.shields.io/badge/Debian%20%C2%B7%20Ubuntu-amd64%20%C2%B7%20arm64-A81D33?logo=debian&logoColor=white)](#download)
+[![Fedora · RHEL](https://img.shields.io/badge/Fedora%20%C2%B7%20RHEL-amd64%20%C2%B7%20arm64-294172?logo=fedora&logoColor=white)](#download)
 [![Docker](https://img.shields.io/badge/Docker-amd64%20%C2%B7%20arm64-2496ED?logo=docker&logoColor=white)](#docker)
 [![site web](https://img.shields.io/badge/site%20web-warda--dns.com-6E46B7)](https://warda-dns.com/fr/)
 [![documentation](https://img.shields.io/badge/documentation-docs.warda--dns.com-6E46B7)](https://docs.warda-dns.com/fr/)
@@ -29,23 +30,32 @@ Warda bloque la publicité, le pistage et les sites dangereux pour tous les appa
 
 ## Télécharger
 
-Dernière version : **0.9.2** · [notes de version](https://github.com/warda-dns/Releases/releases/tag/v0.9.2) · [toutes les versions](https://github.com/warda-dns/Releases/releases)
+Dernière version : **0.9.3** · [notes de version](https://github.com/warda-dns/Releases/releases/tag/v0.9.3) · [toutes les versions](https://github.com/warda-dns/Releases/releases)
 
 | Pour installer Warda sur | Fichier | Ce que c’est |
 |---|---|---|
-| **Raspberry Pi 4 ou plus récent** | [`warda_0.9.2_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_raspberrypi-arm64.img.xz) | Une image prête pour une carte microSD de 16 Go ou plus, écrite avec Raspberry Pi Imager. |
-| **Debian et Ubuntu**<br>amd64 · arm64 | [`warda_0.9.2_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_amd64.deb)<br>[`warda_0.9.2_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_arm64.deb) | Un paquet Debian pour une machine virtuelle ou un serveur dédié. |
-| **Un autre Linux**<br>amd64 · arm64 | [`warda_0.9.2_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_linux_amd64.tar.gz)<br>[`warda_0.9.2_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda_0.9.2_linux_arm64.tar.gz) | Une archive avec le programme seul. |
-| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.2` | Un seul conteneur, pour un serveur ou un NAS qui fait déjà tourner Docker. Voir [Installer avec Docker](#docker). |
-| **Toutes les installations** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/SHA256SUMS.sig) | Les sommes de contrôle de chaque fichier, et leur signature. |
+| **Raspberry Pi 4 ou plus récent** | [`warda_0.9.3_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_raspberrypi-arm64.img.xz) | Une image prête pour une carte microSD de 16 Go ou plus, écrite avec Raspberry Pi Imager. |
+| **Debian et Ubuntu**<br>amd64 · arm64 | [`warda_0.9.3_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_amd64.deb)<br>[`warda_0.9.3_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_arm64.deb) | Un paquet Debian pour une machine virtuelle ou un serveur dédié. |
+| **Fedora, RHEL, Rocky Linux, AlmaLinux**<br>amd64 · arm64 | [`warda-0.9.3-1.x86_64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda-0.9.3-1.x86_64.rpm)<br>[`warda-0.9.3-1.aarch64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda-0.9.3-1.aarch64.rpm) | Un paquet rpm pour une machine virtuelle ou un serveur dédié. |
+| **Un autre Linux**<br>amd64 · arm64 | [`warda_0.9.3_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_linux_amd64.tar.gz)<br>[`warda_0.9.3_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda_0.9.3_linux_arm64.tar.gz) | Une archive avec le programme seul. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.3` | Un seul conteneur, pour un serveur ou un NAS qui fait déjà tourner Docker. Voir [Installer avec Docker](#docker). |
+| **Toutes les installations** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/SHA256SUMS.sig) | Les sommes de contrôle de chaque fichier, et leur signature. |
 
-Avec Raspberry Pi Imager 2, vous pouvez aussi ouvrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.2/warda.rpi-imager-manifest) : Imager règle alors le Wi-Fi, l’utilisateur et SSH avant d’écrire la carte.
+Avec Raspberry Pi Imager 2, vous pouvez aussi ouvrir [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.3/warda.rpi-imager-manifest) : Imager règle alors le Wi-Fi, l’utilisateur et SSH avant d’écrire la carte.
 
 Sous Debian ou Ubuntu, dans un terminal :
 
 ```sh
-sudo apt install ./warda_0.9.2_amd64.deb
+sudo apt install ./warda_0.9.3_amd64.deb
 ```
+
+Sous Fedora, RHEL, Rocky Linux ou AlmaLinux, dans un terminal :
+
+```sh
+sudo dnf install ./warda-0.9.3-1.x86_64.rpm
+```
+
+Le paquet ouvre dans firewalld les ports dont Warda a besoin (service `warda`).
 
 <a name="docker"></a>
 
@@ -57,6 +67,8 @@ Sur un Raspberry Pi 4 ou plus récent avec un système 64 bits, ou sur un serveu
 curl -fsSLO https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
 docker compose up -d
 ```
+
+Le même fichier se trouve aussi à la racine de ce dépôt, [`docker-compose.yml`](docker-compose.yml) : toujours celui de la dernière version.
 
 Warda utilise directement le réseau de la machine : les ports 53 (DNS), 80 et 443 (interface web) doivent être libres. Si un reverse proxy comme Traefik occupe déjà les ports 80 et 443, indiquez `WARDA_HTTP_LISTEN: ":8080"` et `WARDA_HTTPS_LISTEN: ":8443"` dans le fichier avant de lancer Warda. Si systemd-resolved occupe le port 53, le fichier explique comment le libérer.
 
@@ -83,7 +95,7 @@ MCowBQYDK2VwAyEAnDKR0w4ktuxZVIezyPwGx8EMLfZhgf21R5P4efLjMXY=
 
 ## Installer
 
-La documentation vous guide pas à pas, pour le Raspberry Pi, Docker, Debian et Ubuntu : **[docs.warda-dns.com](https://docs.warda-dns.com/fr/)**. Une fois Warda démarré, ouvrez-le dans votre navigateur et suivez l’assistant.
+La documentation vous guide pas à pas, pour le Raspberry Pi, Docker, Debian, Ubuntu, Fedora et RHEL : **[docs.warda-dns.com](https://docs.warda-dns.com/fr/)**. Une fois Warda démarré, ouvrez-le dans votre navigateur et suivez l’assistant.
 
 ## Mises à jour
 
