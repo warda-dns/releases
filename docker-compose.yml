@@ -2,7 +2,7 @@
 # or any amd64 / arm64 server). Copy this file into an empty directory,
 # check the ports below, then: docker compose up -d
 #
-# This file comes with Warda 0.9.3: its image is pinned to that version.
+# This file comes with Warda 0.9.4: its image is pinned to that version.
 # The file of the latest version: https://github.com/warda-dns/Releases/releases/latest/download/docker-compose.yml
 #
 # Host networking lets Warda identify the devices by hardware address and
@@ -17,7 +17,7 @@ services:
     # it again. A new version is announced in the interface of Warda; to
     # install it, write its number here, then:
     #   docker compose pull && docker compose up -d
-    image: ghcr.io/warda-dns/warda:0.9.3
+    image: ghcr.io/warda-dns/warda:0.9.4
     container_name: warda
     network_mode: host
     restart: unless-stopped
@@ -75,7 +75,7 @@ services:
   # keepalived:
   #   build:
   #     dockerfile_inline: |
-  #       FROM ghcr.io/warda-dns/warda:0.9.3 AS warda
+  #       FROM ghcr.io/warda-dns/warda:0.9.4 AS warda
   #       FROM alpine:3.22
   #       RUN apk add --no-cache keepalived
   #       COPY --from=warda /usr/local/bin/warda /usr/local/bin/warda
