@@ -30,29 +30,29 @@ Warda blokkeert reclame, tracking en gevaarlijke sites voor elk apparaat in huis
 
 ## Downloaden
 
-Nieuwste versie: **0.9.6** · [release-opmerkingen](https://github.com/warda-dns/Releases/releases/tag/v0.9.6) · [alle versies](https://github.com/warda-dns/Releases/releases)
+Nieuwste versie: **0.9.7** · [release-opmerkingen](https://github.com/warda-dns/Releases/releases/tag/v0.9.7) · [alle versies](https://github.com/warda-dns/Releases/releases)
 
 | Warda installeren op | Bestand | Wat het is |
 |---|---|---|
-| **Raspberry Pi 4 of nieuwer** | [`warda_0.9.6_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda_0.9.6_raspberrypi-arm64.img.xz) | Een kant-en-klare image voor een microSD-kaart van 16 GB of meer, te schrijven met Raspberry Pi Imager. |
-| **Debian en Ubuntu**<br>amd64 · arm64 | [`warda_0.9.6_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda_0.9.6_amd64.deb)<br>[`warda_0.9.6_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda_0.9.6_arm64.deb) | Een Debian-pakket voor een virtuele machine of een dedicated server. |
-| **Fedora, RHEL, Rocky Linux, AlmaLinux**<br>amd64 · arm64 | [`warda-0.9.6-1.x86_64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda-0.9.6-1.x86_64.rpm)<br>[`warda-0.9.6-1.aarch64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda-0.9.6-1.aarch64.rpm) | Een rpm-pakket voor een virtuele machine of een dedicated server. |
-| **Een andere Linux**<br>amd64 · arm64 | [`warda_0.9.6_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda_0.9.6_linux_amd64.tar.gz)<br>[`warda_0.9.6_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda_0.9.6_linux_arm64.tar.gz) | Een archief met alleen het programma. |
-| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.6` | Eén container, voor een server of een NAS die al Docker draait. Zie [Installeren met Docker](#docker). |
-| **Alle installaties** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/SHA256SUMS.sig) | De controlesommen van elk bestand, en hun handtekening. |
+| **Raspberry Pi 4 of nieuwer** | [`warda_0.9.7_raspberrypi-arm64.img.xz`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda_0.9.7_raspberrypi-arm64.img.xz) | Een kant-en-klare image voor een microSD-kaart van 16 GB of meer, te schrijven met Raspberry Pi Imager. |
+| **Debian en Ubuntu**<br>amd64 · arm64 | [`warda_0.9.7_amd64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda_0.9.7_amd64.deb)<br>[`warda_0.9.7_arm64.deb`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda_0.9.7_arm64.deb) | Een Debian-pakket voor een virtuele machine of een dedicated server. |
+| **Fedora, RHEL, Rocky Linux, AlmaLinux**<br>amd64 · arm64 | [`warda-0.9.7-1.x86_64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda-0.9.7-1.x86_64.rpm)<br>[`warda-0.9.7-1.aarch64.rpm`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda-0.9.7-1.aarch64.rpm) | Een rpm-pakket voor een virtuele machine of een dedicated server. |
+| **Een andere Linux**<br>amd64 · arm64 | [`warda_0.9.7_linux_amd64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda_0.9.7_linux_amd64.tar.gz)<br>[`warda_0.9.7_linux_arm64.tar.gz`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda_0.9.7_linux_arm64.tar.gz) | Een archief met alleen het programma. |
+| **Docker**<br>amd64 · arm64 | [`docker-compose.yml`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/docker-compose.yml)<br>`ghcr.io/warda-dns/warda:0.9.7` | Eén container, voor een server of een NAS die al Docker draait. Zie [Installeren met Docker](#docker). |
+| **Alle installaties** | [`SHA256SUMS`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/SHA256SUMS)<br>[`SHA256SUMS.sig`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/SHA256SUMS.sig) | De controlesommen van elk bestand, en hun handtekening. |
 
-Met Raspberry Pi Imager 2 kun je ook [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.6/warda.rpi-imager-manifest) openen: Imager stelt dan de wifi, de gebruiker en SSH in voordat de kaart wordt geschreven.
+Met Raspberry Pi Imager 2 kun je ook [`warda.rpi-imager-manifest`](https://github.com/warda-dns/Releases/releases/download/v0.9.7/warda.rpi-imager-manifest) openen: Imager stelt dan de wifi, de gebruiker en SSH in voordat de kaart wordt geschreven.
 
 Op Debian of Ubuntu, in een terminal:
 
 ```sh
-sudo apt install ./warda_0.9.6_amd64.deb
+sudo apt install ./warda_0.9.7_amd64.deb
 ```
 
 Op Fedora, RHEL, Rocky Linux of AlmaLinux, in een terminal:
 
 ```sh
-sudo dnf install ./warda-0.9.6-1.x86_64.rpm
+sudo dnf install ./warda-0.9.7-1.x86_64.rpm
 ```
 
 Het pakket opent in firewalld de poorten die Warda nodig heeft (service `warda`).
